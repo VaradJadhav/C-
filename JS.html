@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <form action="" method="post" name="login" onclick="validate()">
+    Username: <input type="text" name="uname">
+    <br>
+    Password: <input type="password" name="password">
+    <br><input type="submit" value="submit">
+    </form>
+    <script>
+        function validate(){
+            var name = document.login.uname.value;
+            var password = document.login.password.value;
+            if(password.length<8)
+             {
+                 alert("password need to be more than 8 characters");
+                 return false;
+             }
+             else  if(name==null){
+            alert("User name should not be blank.");
+        return false;}
+         
+
+        }
+    </script>
+</body>
+</html>
+
+<!-- >
+    All node constraints
+    AbortController       AbortSignal           AggregateError        Array                 ArrayBuffer           Atomics
+BigInt                BigInt64Array         BigUint64Array        Boolean               Buffer                DataView
+Date                  Error                 EvalError             Event                 EventTarget           FinalizationRegistry        
+Float32Array          Float64Array          Function              Infinity              Int16Array            Int32Array
+Int8Array             Intl                  JSON                  Map                   Math                  MessageChannel
+MessageEvent          MessagePort           NaN                   Number                Object                Promise
+Proxy                 RangeError            ReferenceError        Reflect               RegExp                Set
+SharedArrayBuffer     String                Symbol                SyntaxError           TextDecoder           TextEncoder
+TypeError             URIError              URL                   URLSearchParams       Uint16Array           Uint32Array
+Uint8Array            Uint8ClampedArray     WeakMap               WeakRef               WeakSet               WebAssembly
+_                     _error                a                     assert                async_hooks           atob
+btoa                  buffer                child_process         clearImmediate        clearInterval         clearTimeout
+cluster               console               constants             crypto                decodeURI             decodeURIComponent
+dgram                 diagnostics_channel   dns                   domain                encodeURI             encodeURIComponent
+escape                eval                  events                fs                    global                globalThis
+http                  http2                 https                 inspector             isFinite              isNaN
+module                net                   os                    parseFloat            parseInt              path
+perf_hooks            performance           process               punycode              querystring           queueMicrotask
+readline              repl                  require               setImmediate          setInterval           setTimeout
+stream                string_decoder        sys                   timers                tls                   trace_events
+tty                   undefined             unescape              url                   util                  v8
+vm                    wasi                  worker_threads        zlib
+
+__proto__             hasOwnProperty        isPrototypeOf         propertyIsEnumerable  toLocaleString        toString
+valueOf
+
+constructor -->

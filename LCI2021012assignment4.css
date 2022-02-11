@@ -1,0 +1,270 @@
+
+#square{
+    animation-name: m;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    position: relative;
+}
+#rectangle{
+    animation-name: n;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    position: relative;
+}
+#paraleft{
+  animation-name: o;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  position: relative;
+}
+#pararight{
+  animation-name: p;
+  animation-duration: 2s;
+  animation-delay: 6s;
+  position: relative;
+}
+#circle{
+  animation-name: q;
+  animation-duration: 2s;
+  animation-delay: 8s;
+  position: relative;
+}
+#egg{
+  animation-name: r;
+  animation-duration: 2s;
+  animation-delay: 10s;
+  position: relative;
+}
+#moon{
+  animation-name: s;
+  animation-duration: 2s;
+  animation-delay: 12s;
+  position: relative;
+}
+#pacman{
+  animation-name: t;
+  animation-duration: 2s;
+  animation-delay: 14s;
+  position: relative;
+}
+@keyframes m{
+   /* square */
+     from{
+      height: 150px;
+      width: 150px;
+      background:linear-gradient(rgb(247, 5, 5),rgb(5, 5, 250));
+      left: 0px;
+      top: 100px;
+     }
+    /* rectangle */
+    to{
+      width: 200px;
+      height: 100px;
+      background:radial-gradient(white,red,blue);
+        left: 400px;
+        top: 550px;
+
+    }      
+}
+
+@keyframes n{
+  /* rectangle */
+  from{
+    width: 200px;
+    height: 100px;
+    background: radial-gradient(white,red,blue);
+    left: 400px;
+    top: 550px;
+  }
+/* parallelogram left*/
+  to{
+    width: 175px;
+    height: 90px;
+    transform: skew(25deg);
+    background: repeating-linear-gradient(red,blue);
+    left: 800px;
+    top:100px;
+  }
+  }
+
+
+  @keyframes o{
+/* parallelogram left*/
+    from{
+      width: 175px;
+      height: 90px;
+      transform: skew(25deg);
+      background: repeating-linear-gradient(red,blue) ;
+      left: 800px;
+      top:100px;
+      }
+  
+  /* parallelogram right*/
+    to{
+      width: 175px;
+      height: 90px;
+      transform: skew(-25deg);
+      background: repeating-linear-gradient(blue,red) ;
+      left: 1200px;
+      top:550px;
+    }
+
+  }    
+
+  @keyframes p{
+/* parallelogram right*/
+from{
+  width: 175px;
+  height: 90px;
+  transform: skew(-25deg);
+  background: repeating-linear-gradient(blue,red) ;
+  left: 1200px;
+  top:550px;
+}
+    /* circle */
+
+to{width: 150px;
+  height: 150px;
+  background: radial-gradient(white,red,blue);
+  border-radius: 50%;
+left: 1200px;
+top: 100px;
+
+}
+  }
+  @keyframes q{
+    /* circle */
+    from{
+      width: 150px;
+      height: 150px;
+      background: radial-gradient(white,red,blue);
+      border-radius: 50%;
+    left: 1200px;
+    top: 100px;
+    }
+    /* egg */
+    to{
+      display: block;
+      width: 126px;
+      height: 180px;
+      background-color: red;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    left: 800px;
+    top:500px;
+    
+    }
+     
+  }
+  @keyframes r{
+     /* egg */
+     from{
+      display: block;
+      width: 126px;
+      height: 180px;
+      background-color: red;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    left: 800px;
+    top:500px;
+    
+    }
+    /* moon */
+    to{
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      box-shadow: 30px 30px 0 0 rgb(5, 5, 5);
+      left: 400px;
+      top: 100px;
+    }
+     }
+  
+
+     @keyframes s{
+      /* moon */
+    from{
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      box-shadow: 30px 30px 0 0 rgb(5, 5, 5);
+      left: 400px;
+      top: 100px;
+    }
+/* pacman */
+to{
+        
+  width: 0px;
+  height: 0px;
+  border-right: 80px solid transparent;
+  border-top: 80px solid rgb(38, 37, 122);
+  border-left: 80px solid rgb(38, 37, 122);
+  border-bottom: 80px solid rgb(38, 37, 122);
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+left: 0px;
+top: 450px;
+
+}
+      }
+   
+      @keyframes t{
+    
+ /* pacman */
+       from{
+        
+          width: 0px;
+          height: 0px;
+          border-right: 80px solid transparent;
+          border-top: 80px solid  rgb(38, 37, 122);
+          border-left: 80px solid rgb(38, 37, 122);
+          border-bottom: 80px solid  rgb(38, 37, 122);
+          border-top-left-radius: 80px;
+          border-top-right-radius: 80px;
+          border-bottom-left-radius: 80px;
+          border-bottom-right-radius: 80px;
+        left: 0px;
+        top: 450px;
+  
+       }
+       /* space-invader */
+       to {
+        box-shadow: 0 0 0 1em blue,
+        0 1em 0 1em red,
+        -2.5em 1.5em 0 .5em blue,
+        2.5em 1.5em 0 .5em red,
+        -3em -3em 0 0 blue,
+        3em -3em 0 0 red,
+        -2em -2em 0 0 blue,
+        2em -2em 0 0 red,
+        -3em -1em 0 0 blue,
+        -2em -1em 0 0 red,
+        2em -1em 0 0 blue,
+        3em -1em 0 0 red,
+        -4em 0 0 0 blue,
+        -3em 0 0 0 red,
+        3em 0 0 0 blue,
+        4em 0 0 0 red,
+        -5em 1em 0 0 blue,
+        -4em 1em 0 0 red,
+        4em 1em 0 0 blue,
+        5em 1em 0 0 red,
+        -5em 2em 0 0 blue,
+        5em 2em 0 0 red,
+        -5em 3em 0 0 blue,
+        -3em 3em 0 0 red,
+        3em 3em 0 0 blue,
+        5em 3em 0 0 red,
+        -2em 4em 0 0 blue,
+        -1em 4em 0 0 red,
+        1em 4em 0 0 blue,
+        2em 4em 0 0 red;
+        background: blue;
+        width: 1em;
+        height: 1em;
+        overflow: hidden;
+        margin: 50px 0 70px 65px;
+        left: 0px;
+        top: 100px;
+      }
+        }
